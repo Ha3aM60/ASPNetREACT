@@ -1,0 +1,55 @@
+<div class="Main">
+    <form style="height: 100%;margin: 0px 0px" #form="ngForm" (ngSubmit)="addUserReg()">
+        <section class="vh-100 gradient-custom">
+            <div class="container py-5 h-100" style="padding-top: 0.5rem !important;padding-bottom: 0.5rem !important;">
+                <div class="row d-flex justify-content-center align-items-center h-100">
+                    <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+                        <div class="card Green text-white" style="border-radius: 1rem;">
+                            <div class="card-body p-5 text-center">
+                                <div class="mb-md-5 mt-md-4 pb-5">
+                                    <h2 class="fw-bold mb-2 text-uppercase">Register</h2>
+                                    <p class="text-white-50 mb-5">Please fill in the empty fields!</p>
+                                    <input type="hidden" name="activeDivId" value="1">
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" name="loginUser" id="typeLoginX"
+                                            class="form-control form-control-lg" [(ngModel)]="addUser.login" />
+                                        <label class="form-label" for="typeLoginX">Login</label>
+                                    </div>
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="email" name="emailUser" id="typeEmailX"
+                                            class="form-control form-control-lg" [(ngModel)]="addUser.email" />
+                                        <label class="form-label" for="typeEmailX">Email</label>
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="password" name="passUser" id="typePasswordX"
+                                            class="form-control form-control-lg" [(ngModel)]="addUser.password" />
+                                        <label class="form-label" for="typePasswordX">Password</label>
+                                    </div>
+                                    <button class="btn btn-outline-light btn-lg px-5" name="addBtn"
+                                        type="submit">Register</button>
+
+                                    <div class="d-flex justify-content-center text-center mt-2 pt-1">
+                                        <a href="#!" class="text-white"><i class="fab fa-facebook-f fa-lg"></i></a>
+                                        <a href="#!" class="text-white"><i
+                                                class="fab fa-twitter fa-lg mx-4 px-2"></i></a>
+                                        <a href="#!" class="text-white"><i class="fab fa-google fa-lg"></i></a>
+                                    </div>
+
+                                </div>
+
+                                <div>
+                                    <p class="mb-0">Have account? <a class="text-white-50 fw-bold"
+                                            routerLink="/login">Sign
+                                            in</a>
+                                    </p>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </form>
+</div>
